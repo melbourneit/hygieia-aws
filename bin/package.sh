@@ -4,8 +4,8 @@ script_dir="${0%/*}"
 source $script_dir/config
 
 # Remote commented & blank lines from deploy.properties
-sed -i '' 's:^#.*$::g' deploy.properties
-sed -i '' '/^[[:space:]]*$/d' deploy.properties
+sed -i 's:^#.*$::g' deploy.properties
+sed -i '/^[[:space:]]*$/d' deploy.properties
 
 CMD=$(cat <<EOF
 aws cloudformation package                     \
