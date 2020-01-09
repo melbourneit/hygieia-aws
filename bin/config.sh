@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 
 # The S3 Bucket the packaged CloudFormation will be uploaded to
-S3_BUCKET=hygieia-quickstart
+S3_BUCKET=hygieia-m3qs
 
 # The AWS region Hygieia will be deployed to
-AWS_REGION=us-east-1
+AWS_REGION=ap-southeast-2
 
 # The CloudFormation Stack name associated with Hygieia
 STACK_NAME=Hygieia-Quickstart
