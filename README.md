@@ -61,9 +61,19 @@ The more collectors you enable and the more data you gather, the larger the Mong
 ## Deployment Notes
 
 Make sure .local namespace is available in route 53
+
 Key can be generated from UI, must be added to API and Collectors ECS task definition parameters (restart UI task after)
+
 Might need to add hygieia DB user manually to mongo?
+
 update sed commands in 'bin/*.sh' removing first param (TODO update this repo..)
+
 If setting private subnets for ECS in deploy.prameters you must set the ELB to public subnets
+
 Add public dns entry for devops domain and https entry in ELB using wildcard certificate
+
 If ECS nodes are constantly falling over, generally means they can't connect to monogo
+
+## ToDo
+
+Move task definition launch config password to a store
