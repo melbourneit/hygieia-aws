@@ -1,19 +1,5 @@
-# Hygieia Quick Start
-This repo is a companion to the [Hygieia](https://hygieia.github.io/) project with a goal of helping you get an initial Hygieia installation up and running quickly within about an hour. The initial configuration is deployed to AWS and capable of supporting about 100 team dashboards out of the box in a secure manner for about $200 a month in AWS hosting costs.
-
-This repo is created and supported by [SingleStone](https://www.singlestoneconsulting.com), a technology company who is a member of the Hygieia Consortium and based in Richmond, Virginia. 
-
-
-## Prerequisites
-Before you start you will need the following:
-1. A computer with a Bash shell installed
-1. A [Git client](https://git-scm.com/downloads) is helpful if you want clone this repo, but is not required.
-
-For AWS you will need:
-1. An [AWS Account](https://aws.amazon.com/account/)
-1. Permissions to run CloudFormation, create IAM roles and security groups. See [security.template](cfn/security.template) for the IAM roles and security groups created.
-1. An [AWS Command Line Interface (CLI)](https://aws.amazon.com/cli/) installed and connected to your AWS account.
-1. An [AWS S3 bucket](https://aws.amazon.com/s3/) in your account for storing the CloudFormation code used to launch Hygieia.
+# Hygieia 
+Hygieia is a dashboarding tool comprising of a mongo DB and a series of collectors running as ECS tasks.
 
 ## Step 1: Install MongoDB
 The first thing you need with Hygieia is a MongoDB database to store the data. We recommend following the [AWS MongoDB Quick Start](https://aws.amazon.com/quickstart/architecture/mongodb/) to setup your database. This secure implementation takes about 15 minutes to setup via CloudFormation and can run inside an existing VPC or one it creates.
