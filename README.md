@@ -74,6 +74,8 @@ Add public dns entry for devops domain and https entry in ELB using wildcard cer
 
 If ECS nodes are constantly falling over, generally means they can't connect to monogo
 
+!! There is a bug where updating a repo widget without changing the access key causes the old key to be duplicated.  The key must be replaced everytime there is a change to the widget
+
 ## ToDo
 
 Move task definition launch config password to a store
